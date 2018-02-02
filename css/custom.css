@@ -70,7 +70,8 @@ body {
 
 .carousel {
   interval: false;
-  box-shadow: 3px 5px 3rem 0px rgb(234, 209, 212);
+  /*box-shadow: 3px 5px 3rem 0px rgb(234, 209, 212);*/
+  box-shadow: 4px 4px 5px rgb(234, 209, 212);
 }
 
 .carousel-inner {
@@ -106,7 +107,7 @@ body {
   margin-right: auto;
   width: 600px;
   z-index: 1;
-  box-shadow: 8px 8px 10px #aaa;
+  box-shadow: 8px 8px 10px rgb(234, 209, 212);
 }
 
 .default-image {
@@ -115,7 +116,7 @@ body {
   margin-right: auto;
   width: 400px;
   z-index: 1;
-  box-shadow: 8px 8px 10px #aaa;
+  box-shadow: 8px 8px 10px rgb(234, 209, 212);
 }
 
 .centered-description {
