@@ -33,7 +33,7 @@ body {
 
 .title-child{
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 40%;
   height: 50%;
   width: 50%;
@@ -41,16 +41,25 @@ body {
   /*margin: -15% 0 0 -25%;*/
 }
 
+.home-banner {
+  font-size: 5.5rem;
+}
+
+.home-banner-date {
+  font-size: 3rem;
+}
+
 .home-links {
   top: 30px;
 }
 
 .row {
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 .jumbotron {
   background-color: transparent;
+  padding: 10px;
 }
 
 #counterDowner {
@@ -61,11 +70,22 @@ body {
 
 .carousel {
   interval: false;
+  box-shadow: 3px 5px 3rem 0px rgb(234, 209, 212);
 }
 
 .carousel-inner {
   max-height: 500px;
   /*interval: false;*/
+}
+
+.fa-chevron-right{
+  color: black;
+  font-size: 3em;
+}
+
+.fa-chevron-left{
+  color: black;
+  font-size: 3em;
 }
 
 .img-fluid {
