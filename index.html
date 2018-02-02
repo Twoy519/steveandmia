@@ -7,19 +7,38 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script type="text/javascript" src="js/counterDowner.js"></script>
 
     <!-- Favicon -->
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
   </head>
   <body>
 
+  <!-- Facebook Javascript SDK for Comments Box -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=177672699257719&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- End FB -->
+
+    <div class="title">
+      <div class='title-child'>
+        <h1>Steve and Mia</h1>
+        <h6>September 22, 2018</h6>
+      </div>
+      <!-- <small>by Bob Dylan</small> -->
+    </div>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <nav class="navbar sticky-top navbar-toggleable-md navbar-light">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src='/img/icon_150.png' width='30px' height='30px'></a>
+      <!-- <a class="navbar-brand" href="#"><img src='/img/icon_150.png' width='30px' height='30px'></a> -->
 
       <div class="collapse navbar-collapse nav-fill" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto w-100">
@@ -27,26 +46,37 @@
             <a class="nav-link" href="#our_story">Our Story<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Wedding Party</a>
+            <a class="nav-link" href="#ceremony_and_reception">Ceremony & Reception</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Venue</a>
+            <a class="nav-link" href="#accomodations">Accomodations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Events</a>
+            <a class="nav-link" href="#travel_and_transportation">Travel & Transportation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Things To Do</a>
+            <a class="nav-link" href="#things_to_do">Things To Do</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Accomodations</a>
+            <a class="nav-link" href="#photos">Photos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Registry</a>
+            <a class="nav-link" href="#registry">Registry</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">RSVP</a>
+            <a class="nav-link" href="#rsvp">RSVP</a>
           </li>
+
+<!-- Our Story -->
+<!-- Our Proposal -->
+<!-- Ceremony & Reception -->
+<!-- Accomodations -->
+<!-- Travel and Transportation -->
+<!-- Things to Do -->
+<!-- Photos -->
+<!-- Registry -->
+<!-- Leave A Note -->
+
         </ul>
       </div>
     </nav>
@@ -56,8 +86,9 @@
     <div class="row">
       <div class="col" align="center">
         <div class="jumbotron">
-            <h1>Steve and Mia's Wedding!</h1>
-            <img src='/img/steve_and_mia_home.png' width='300px'>
+          <div class='homeContainer'>
+            <img src='/img/top_of_site.jpg' id='homeForegroundImage'>
+          </div>
         </div>
       </div>
     </div>
@@ -67,37 +98,434 @@
         <p class="lead">
           September 22, 2018<br>
           Bradley Mountain Farm<br>
-          537 Shuttle Meadow Rd, Southington, CT 06489<br>
+          <a href="https://goo.gl/maps/BsHc6sG6qt22" target="_blank">537 Shuttle Meadow Rd, Southington, CT 06489</a><br>
         <p>
+        <br>
+        <p id="counterDowner"></p>
       </div>
     </div>
 
 <hr>
 
-    <!-- ABOUT US -->
+    <!-- Our Story -->
     <div class="row" id='our_story'>
       <div class="col-2"></div>
       <div class="col-8">
         <h1 align="center">Our Story</h1>
-        <p>
-          Steve and Mia met at Cadillac Ranch, a country line dancing bar, Friday, January 13, 2012.
-        </p>
-        <p>
-          It was a setup by a mutual friend, Katie Bailer who had been trying for a long time to get us both in the same place at the same time. Mia was working for a non-profit victim advocacy organization and Steve was studying to get his Masters and working for Eversource.
-        </p>
-        <p>
-          The first thing about Steve that struck Mia, besides being an Accountant which she thought must meant he was boring, was that when she told him what she did for work, he actually seemed interested. So she gave him a chance.
-        </p>
-        <p>
-          The song Like the Rain by Clint Black came on and he asked her to dance. She figured, heck its a new year, why not. He literally swept her off her feet and they danced around for the next two songs.
-        </p>
-        <p>
-          Despite having been in the same place at the same time multiple times at UCONN, they always say it wasn't meant to be until it really was. Within a year they had moved in together and were talking about the future. Now, 6 years later, they have a house, a rabbit and a dog.
-        </p>
+        <p>Steve and Mia met January 13, 2012 at a country line dancing bar.</p>
+        <p>Despite having both graduated from UCONN, and their paths crossing many times, they did not meet until over a year after graduation.</p>
+        <p>Thanks to Katie Bailer’s persistence in setting them up – their love story began that night while Steve swept Mia off her feet dancing to “Like the rain” by Clint Black.</p>
       </div>
       <div class="col-2"></div>
     </div>
-  </div>
+
+<hr>
+
+    <!-- Our Proposal -->
+    <div class="row" id='our_proposal'>
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1 align="center">Our Proposal</h1>
+        <p>It was a hot Wednesday night in August when Steve decided this was it.</p>
+        <p>He filled the room with candles (panicking he would burn down the house), got their favorite Thai food and asked Mia to join him for a date night.</p>
+        <p>It wasn’t until after dinner when Steve led Mia outside in the backyard where flowers and twinkle lights set the scene for a romantic down on one knee proposal.</p>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+<hr>
+
+    <!-- Ceremony & Reception -->
+    <div class="row" id='ceremony_and_reception'>
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1 align="center">Ceremony and Reception</h1>
+        <img class='default-image' src="/img/Venue.jpg" />
+        <br>
+        <div class='container centered-description'>
+            <p>Saturday, September 22, 2018</p>
+            <p>4:00 PM</p>
+            <p>Attire: Fancy Farm</p>
+          <h2>Reception</h2>
+            <p>Bradley Mountain Farm</p>
+            <a href="https://goo.gl/maps/BsHc6sG6qt22" target="_blank">537 Shuttle Meadow Rd, Southington, CT 06489</a>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+
+    <!-- Accomodations -->
+    <hr>
+    <div class="row" id='accomodations'>
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1 align="center">Accomodations</h1>
+        <div class='container centered-description'>
+          <h6>Coming Soon</h6>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <!-- Travel and Transportation -->
+    <hr>
+    <div class="row" id='travel_and_transportation'>
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1 align="center">Travel and Transportation</h1>
+        <div class='container centered-description'>
+          <h6>Coming Soon</h6>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <!-- Things to Do -->
+    <hr>
+    <div class="row" id='things_to_do'>
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1 align="center">Things to Do</h1>
+        <div class='container centered-description'>
+          <p>
+            <a href='http://www.rogersorchards.com/default.aspx' target='_blank'>Rogers Orchard</a><br>
+            <a href='https://barnesmuseum.wordpress.com/' target='_blank'>The Barnes Museum</a><br>
+            <a href='http://amomentawayspa.com/' target='_blank'>A Moment Away (spa)</a><br>
+          </p>
+          <h3>Restaurants, Bars and Breweries</h3>
+          <p>
+            <p>We of course must include the place we met: <a href='https://caddyranch.com/' target='_blank'>Cadillac Ranch Restaurant</a></p>
+            <a href='http://www.witchdoctorbrewing.com/' target='_blank'>Witchdoctor Brewing Company</a><br>
+            <a href='http://www.kinsmenbrewing.com/home/' target='_blank'>Kinsmen Brewing</a><br>
+          </p>
+          <h3>Hiking, walking and so much more</h3>
+          <p>
+            <a href='http://www.ct.gov/deep/cwp/view.asp?a=2716&q=325274&deepNav_GID=1650+' target='_blank'>Wadsworth Falls State Park</a><br>
+            <a href='https://www.theoutbound.com/connecticut/hiking/hike-the-ragged-mountain-memorial-preserve' target='_blank'>Ragged Mountain</a><br>
+            <a href='http://www.raggedmountainguides.com/connecticut-rock-climbing/' target='_blank'>Rock Climbing</a>
+            <a href='https://ctweekender.com/things-to-do-in-connecticut/outdoor-activities-ct/parks-forests-ct/local-parks/castle-craig-at-hubbard-park/' target='_blank'>Hubbard Park & Castle Craig</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <!-- Photos -->
+    <hr>
+    <div class="row" id='photos'>
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1 align="center">Photos</h1>
+        <div class='container centered-description'>
+
+          <!-- Carousel 1 -->
+          <h3>Our First Photo – We Found Love In Playing with Our Food</h3>
+          <div id="carousel_one" class="carousel slide" data-interval="false">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="/img/group_1/photo_1.jpg">
+              </div>
+            </div>
+          </div>
+          <!-- End Carousel 1 -->
+
+          <!-- Carousel 2 -->
+          <br>
+          <h3>🗺 We Have Had Some Great Adventures 🐅</h3>
+          <br>
+          <div id="carousel_2" class="carousel slide" data-interval="false">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 2.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 3.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 4.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 5.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 6.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 7.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 8.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 9.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 10.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 11.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 12.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 12a.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_2/Photo 12b.jpg">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- End Carousel 2 -->
+
+          <!-- Carousel 3 -->
+          <br>
+          <h3>✈ We Have Traveled Near And Far 🏝</h3>
+          <br>
+          <div id="carousel_3" class="carousel slide" data-interval="false">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="/img/group_3/Photo 13.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_3/Photo 14.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_3/Photo 15.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_3/Photo 16.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_3/Photo 17.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_3/Photo 18.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_3/Photo 19.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_3/Photo 20.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_3/Photo 21.jpg">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- End Carousel 3 -->
+
+          <!-- Carousel 4 -->
+          <br>
+          <h4>🌭 Ate Food And Partied Too 🎉</h4>
+          <br>
+          <div id="carousel_4" class="carousel slide" data-interval="false">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="/img/group_4/Photo 23.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_4/Photo 24.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_4/Photo 25.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_4/Photo 26.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_4/Photo 27.jpg">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_4" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_4" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- End Carousel 4 -->
+
+          <!-- Carousel 5 -->
+          <br>
+          <h4>Went To A Wedding, 2, or 15  😉</h4>
+          <br>
+          <div id="carousel_5" class="carousel slide" data-interval="false">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="/img/group_5/Photo 28.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_5/Photo 29.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_5/Photo 30.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_5/Photo 31.jpg">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_5" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_5" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- End Carousel 5 -->
+
+          <!-- Carousel 6 -->
+          <br>
+          <h4>Got a 🐰 And A 🐶</h4>
+          <br>
+          <div id="carousel_6" class="carousel slide" data-interval="false">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="/img/group_6/Photo 32.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_6/Photo 33.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_6/Photo 34.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_6/Photo 35.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_6/Photo 36.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_6/Photo 37.jpg">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_6" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_6" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- End Carousel 6 -->
+
+          <!-- Carousel 7 -->
+          <br>
+          <h4>Bought A 🏡 And Got Engaged</h4>
+          <br>
+          <div id="carousel_7" class="carousel slide" data-interval="false">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="/img/group_7/Photo 38.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_7/Photo 39.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_7/Photo 40.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_7/Photo 41.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_7/Photo 42.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/group_7/Photo 43.jpg">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel_7" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_7" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- End Carousel 7 -->
+
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <!-- Registry -->
+    <hr>
+    <div class="row" id='registry'>
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1 align="center">Registry</h1>
+        <div class='container centered-description'>
+          <p>We can't wait to get married and are so honored to have you at our wedding!</p>
+          <p>If you would like to help us start our new life together, we have registered for items we would love to have in our home.</p>
+          <p>Click the Zola logo below to go to our registry</p>
+          <br>
+          <hr width='200px'>
+          <br>
+          <a href="https://www.zola.com/wedding/miaandsteven/registry" target="_blank"><img class='registry-logo' src='img/zola-logo-minimal.svg' /></a>
+          <br>
+          <hr width='200px'>
+          <br>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <!-- RSVP -->
+    <hr>
+    <div class="row" id='rsvp'>
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1 align="center">RSVP</h1>
+        <div class='container centered-description'>
+          <h6>Coming Soon</h6>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <!-- Leave A Note -->
+    <hr>
+    <div class="row" id='leave_a_note'>
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div class='container centered-description'>
+          <h6>Please leave us a note to help us remember this special time in our lives. Thanks for celebrating with us!</h6>
+          <div class="container">
+            <div class="fb-comments" data-href="http://steveandmia.com/" data-width="500" data-numposts="10"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <hr>
+
+    <img src='/img/bottom_of_page.jpg' id='homeForegroundImage'>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
