@@ -13,11 +13,23 @@ F5DFD3 - beige rgba(245,223,211,.5)
 */
 
 body {
-  background-color: rgba( 174, 97, 103, 0.1)
+  /*background-color: rgba( 174, 97, 103, 0.1)*/
+  /*background-image: url("/img/pattern_background.jpg");*/
+  /*background-repeat: repeat-y;*/
 }
 
 .navbar {
-  background-color: rgba(233, 209, 212, 1);
+  /* light dusty pink*/
+  /*background-color: rgba(233, 209, 212, 1);*/
+
+  /* orange'ish beige */
+  background-color: rgba(235, 235, 235, 1)
+}
+
+.header-image {
+  position: absolute;
+  width: 200px;
+  padding-top: 350px;
 }
 
 .title {
@@ -56,6 +68,10 @@ body {
 
 .row {
   padding-top: 10px;
+}
+
+.padded-row {
+  padding-top: 50px;
 }
 
 .jumbotron {
@@ -161,4 +177,39 @@ body {
 
 .registry-logo {
   width: 200px;
+}
+
+/* hr styles https://codepen.io/ibrahimjabbari/pen/ozinB */
+
+hr.style14 {
+  /* fade in and out */
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+
+  /* wrapped at edges */
+  /*overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;*/
+}
+
+/*hr.style14:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}*/
+
+.vector-credit {
+  font-size: 6px;
 }
