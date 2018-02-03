@@ -33,16 +33,17 @@ body {
 
 .title-child{
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 40%;
   height: 50%;
   width: 50%;
   color: rgba(204, 224, 235, 0.7);
+  /*color: rgba(46, 69, 51, 0.7);*/
   /*margin: -15% 0 0 -25%;*/
 }
 
 .home-banner {
-  font-size: 5.5rem;
+  font-size: 3.5rem;
 }
 
 .home-banner-date {
@@ -62,6 +63,14 @@ body {
   padding: 10px;
 }
 
+#our_story {
+  text-align: center;
+}
+
+#our_proposal {
+  text-align: center;
+}
+
 #counterDowner {
   text-align: center;
   font-size: 60px;
@@ -71,7 +80,8 @@ body {
 .carousel {
   interval: false;
   /*box-shadow: 3px 5px 3rem 0px rgb(234, 209, 212);*/
-  box-shadow: 4px 4px 5px rgb(234, 209, 212);
+  border: 5px solid #f3f3f3;
+  box-shadow: 1px 1px 2px #666;
 }
 
 .carousel-inner {
@@ -100,6 +110,10 @@ body {
   position: relative;
 }
 
+.baby-picture-container {
+  text-align: center;
+}
+
 #homeForegroundImage {
   /*position: absolute;*/
   display: block;
@@ -107,7 +121,28 @@ body {
   margin-right: auto;
   width: 600px;
   z-index: 1;
-  box-shadow: 8px 8px 10px rgb(234, 209, 212);
+  border: 5px solid #f3f3f3;
+  box-shadow: 1px 1px 2px #666;
+}
+
+.card {
+  max-width: 300px;
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
+  border: 5px solid #f3f3f3;
+  box-shadow: 1px 1px 2px #666;
+}
+
+.card-inverse {
+  max-width: 300px;
+  max-height: 100%;
+}
+
+.card-img {
+  max-width: 300px;
+  /*border: 5px solid #f3f3f3;*/
+  /*box-shadow: 1px 1px 2px #666;*/
 }
 
 .default-image {
@@ -116,7 +151,8 @@ body {
   margin-right: auto;
   width: 400px;
   z-index: 1;
-  box-shadow: 8px 8px 10px rgb(234, 209, 212);
+  border: 5px solid #f3f3f3;
+  box-shadow: 1px 1px 2px #666;
 }
 
 .centered-description {
