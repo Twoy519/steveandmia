@@ -137,6 +137,10 @@ body {
   box-shadow: 2px 2px 1px rgba(211,211,211,0.8);
 }
 
+.smaller-image {
+  width: 50%;
+}
+
 .baby-pics {
   max-width: 350px;
 }
