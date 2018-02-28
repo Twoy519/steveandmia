@@ -13,7 +13,7 @@ F5DFD3 - beige rgba(245,223,211,.5)
 */
 
 body {
-  background-color: rgba( 240, 217, 220);
+  background-color: rgba( 240, 217, 220, 0.5);
 }
 
 .navbar {
@@ -85,19 +85,24 @@ body {
 }
 
 .carousel {
+  width: 90%;
   display: grid;
   justify-items: center;
   border: 3px solid rgba( 240, 217, 220);
-  box-shadow: 1px 1px #666;
+  box-shadow: 2px 2px 1px rgba(211,211,211,0.8);
+}
+
+.carousel-container {
+  display: grid;
+  justify-items: center;
 }
 
 .carousel-inner {
-  width: 90%;
+  width: 80%;
   height: auto;
   overflow: hidden;
   position: relative
 }
-
 
 .fa-chevron-right{
   color: black;
@@ -127,15 +132,9 @@ body {
 }
 
 .home-image {
-  width: 80%;
-  border: 3px solid rgba( 240, 217, 220);
-  box-shadow: 1px 1px #666;
-}
-
-.goat-image {
   width: 70%;
   border: 3px solid rgba( 240, 217, 220);
-  box-shadow: 1px 1px #666;
+  box-shadow: 2px 2px 1px rgba(211,211,211,0.8);
 }
 
 .baby-pics {
